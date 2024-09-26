@@ -32,7 +32,7 @@ class LocationParserUtil {
             )
         }
 
-        fun getLocationMapFromLocation(location: LocationResult?): HashMap<Any, Any>? {
+        fun getLocationMapFromLocation(location: LocationResult?): HashMap<String, Any>? {
             val firstLocation = location?.lastLocation ?: return null
 
             var speedAccuracy = 0f
